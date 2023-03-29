@@ -8,7 +8,6 @@ from sqlalchemy import null
 def obter_dados() -> list:
     '''
     Essa função carrega os dados dos produtos e retorna uma lista de dicionários, onde cada dicionário representa um produto.
-    NÃO MODIFIQUE essa função.
     '''
     with open(os.path.join(sys.path[0], 'dados.json'), 'r') as arq:
         dados = json.loads(arq.read())
